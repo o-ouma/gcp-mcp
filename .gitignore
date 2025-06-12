@@ -1,3 +1,4 @@
 *.pyc
 __pycache__/
 .env
+keys/test-tazama-c943d8a68568.json
