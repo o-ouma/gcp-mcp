@@ -2,3 +2,4 @@
 __pycache__/
 .env
 keys/test-tazama-c943d8a68568.json
+gcp_mcp.sh

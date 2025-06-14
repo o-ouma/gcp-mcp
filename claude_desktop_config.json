@@ -1,0 +1,12 @@
+{
+    "mcpServers": {
+        "github_ops": {
+            "command": "wsl",
+            "args": [
+                "bash",
+                "-c",
+                "source ~/projects/gcp_mcp/venv/bin/activate && python3 ~/projects/gcp_mcp/mcp_server.py"
+            ]
+        }
+    }
+}
