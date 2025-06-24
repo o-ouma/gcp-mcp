@@ -6,7 +6,15 @@ This project makes use of an MCP server to implement AI-powered cloud management
  - List persistent disks in a project
  - List virtual machines running in a project
 
-## Setup
+## Project Setup
+
+```bash
+python3 -m venv venv
+```
+
+```bash
+source venv/bin/activate
+```
 
 ```bash
 pip install -r requirements.txt
