@@ -1,6 +1,10 @@
 # GCP-MCP Server
 
-This project makes use of an MCP server to implement AI-powered cloud management. With the server, one can: - List vpc networks and subnets - List ip addresses in a project and resources using them - List persistent disks in a project - List virtual machines running in a project
+This project makes use of an MCP server to implement AI-powered cloud management. With the server, one can:
+ - List vpc networks and subnets
+ - List ip addresses in a project and resources using them
+ - List persistent disks in a project
+ - List virtual machines running in a project
 
 ### Prerequisites
 
