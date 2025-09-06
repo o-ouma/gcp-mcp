@@ -131,8 +131,8 @@ def list_load_balancers(project_id: str, region: Optional[str] = None) -> Union[
         def parse_rule(rule, region_name: Optional[str] = None) -> LoadBalancerResponse:
             """Helper function to parse forwarding rule into LoadBalancerResponse"""
             lb_type = "EXTERNAL" if rule.load_balancing_scheme == "EXTERNAL" else "INTERNAL"
-            ip_address = getattr(rule, "IPAddress", None)
-            ip_protocol = getattr(rule, "IPProtocol", None)
+            ip_address = getattr(rule, "ip_address", None) or getattr(rule, "IPAddress", None)
+            ip_protocol = getattr(rule, "ip_protocol", None) or getattr(rule, "IPProtocol", None)
 
             return LoadBalancerResponse(
                 name=rule.name,
