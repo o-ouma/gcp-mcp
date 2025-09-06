@@ -4,3 +4,4 @@ __pycache__/
 venv
 keys/test-tazama-c943d8a68568.json
 gcp_mcp.sh
+.idea
