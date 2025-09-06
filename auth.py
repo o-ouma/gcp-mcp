@@ -1,6 +1,6 @@
 from google.oauth2 import service_account
 from google.cloud import storage, bigquery, pubsub, secretmanager, monitoring, billing
-from google.cloud.compute_v1 import InstancesClient
+from google.cloud.compute_v1 import InstancesClient, ForwardingRulesClient
 import os
 from dotenv import load_dotenv
 import logging
@@ -57,3 +57,7 @@ class GCPAuth:
     def get_billing_client(self):
         """Get authenticated Google Cloud Billing client."""
         return billing.CloudBillingClient(credentials=self.credentials) 
+
+    def get_forwarding_rules_client(self):
+        """Get authenticated Google Cloud Forwarding Rules client."""
+        return ForwardingRulesClient(credentials=self.credentials) 
